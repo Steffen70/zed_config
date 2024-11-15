@@ -10,6 +10,11 @@
     "context": "Editor && inline_completion && !showing_completions",
     "bindings": {
       "right": "editor::AcceptInlineCompletion",
+      "ctrl-right": "editor::AcceptPartialInlineCompletion",
+      "alt-right": "editor::NextInlineCompletion",
+      "alt-left": "editor::PreviousInlineCompletion",
+      "alt-]": null,
+      "alt-[": null,
       "tab": "editor::Tab"
     }
   }
