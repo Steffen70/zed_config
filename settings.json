@@ -7,6 +7,25 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // General Settings
+  "collaboration_panel": {
+    "button": false
+  },
+  "autosave": "on_focus_change",
+  "preferred_line_length": 200,
+  "soft_wrap": "preferred_line_length",
+  "confirm_quit": false,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "theme": {
+    "mode": "system",
+    "light": "Github Light",
+    "dark": "One Dark"
+  },
+
+  // Extensions
   "auto_install_extensions": {
     "dart": true,
     "git-firefly": true,
@@ -16,9 +35,30 @@
     "powershell": true,
     "ruby": true
   },
+
+  // Editor Settings
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_family": "Consolas ligaturized v2",
   "file_types": {
     "Ruby": ["Fastfile", "Appfile"]
   },
+  "inlay_hints": {
+    "enabled": true
+  },
+  "project_panel": {
+    "folder_icons": false
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true,
+      "delay_ms": 500,
+      "show_commit_summary": true,
+      "min_column": 201
+    }
+  },
+
+  // Assistant Settings
   "assistant": {
     "default_model": {
       "provider": "openai",
@@ -26,26 +66,12 @@
     },
     "version": "2"
   },
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
-  "buffer_font_family": "Consolas ligaturized v2",
-  "preferred_line_length": 200,
-  "soft_wrap": "preferred_line_length",
-  "theme": {
-    "mode": "system",
-    "light": "Github Light",
-    "dark": "One Dark"
-  },
-  "project_panel": {
-    "folder_icons": false
-  },
+
+  // Terminal Settings
   "terminal": {
     "shell": {
       "program": "pwsh"
-    }
+    },
+    "copy_on_select": true
   }
 }
