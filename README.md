@@ -9,7 +9,7 @@ After installing Zed to the `/opt/` directory, you need to create the symbolic l
 
 ```bash
 # To create the symbolic links
-sudo ln -s /opt/zed/zed /usr/local/bin/zed
+sudo ln -s /opt/zed/bin/zed /usr/local/bin/zed
 
 # To create the desktop file
 cp /opt/zed/share/applications/zed.desktop ~/.local/share/applications/dev.zed.Zed.desktop
